@@ -1,0 +1,132 @@
+/*font-family: 'Press Start 2P', cursive;
+font-family: 'Pangolin', cursive;*/
+
+body {
+	background-color: #ddd;
+}
+
+a {
+	text-decoration: none;
+}
+
+#header {
+	background-color: /*rgb(168, 203, 213)*/#ffbb42;
+	width: 100%;
+	height: 150px;
+	background-image: inherit;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+}
+
+.wrap {
+	/*background-color: #999;*/
+	max-width: 1170px;
+	margin: 0px auto;
+	height: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.wrap.head {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.headSentence {
+	display: flex;
+	align-items: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 35px;
+	height: 100%;
+	color: #f8f8f6;
+}
+
+#container {
+	overflow: hidden;
+	min-height: 100vh;
+	background-image: url("noiseImg.png");
+}
+
+#allContent {
+	height: 100%;
+	padding-top: 10px;
+}
+
+.games {
+	display: flex; /* Поменять на flex */
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.game {
+	width: 300px;
+	height: 300px;
+	background-color: #333;
+	margin: 10px;
+	box-shadow: 5px 5px 2px rgba(0,0,0,0.2);
+	color: #fff;
+	font-family: 'Pangolin', cursive;
+}
+
+#firstGameBlock {
+	background-image: url("firstImg.jpg");
+	background-size: cover;
+}
+
+.startButton {
+	display: flex;
+	justify-content: center;
+	color: #f12742;
+	font-family: 'Pangolin', cursive;
+	font-size: 28px;
+}
+
+.gameOne {
+	display: flex;
+	/*background-color: #166;*/ /* убрать */
+	font-family: 'Pangolin', cursive;
+	font-size: 28px;
+}
+
+.question,
+.result {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.result h2 {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.result p {
+font-size: 22px;
+color: #252525;
+}
+
+
+input[type="text"] {
+	border: 0px;
+	background-color: #fff;
+	padding: 5px;
+	outline: none;
+	font-family: inherit;
+	font-size: 20px;
+	border-radius: 3px;
+	margin: 10px auto 0px;
+}
+
+#nextButton {
+	padding: 20px 50px;
+	font-family: inherit;
+	background-color: #00b454;
+	cursor: pointer;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.invis {
+	display: none;
+}
