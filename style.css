@@ -10,7 +10,7 @@ a {
 }
 
 #header {
-	background-color: /*rgb(168, 203, 213)*/#ffbb42;
+	background-color: #ffbb42;
 	width: 100%;
 	height: 150px;
 	background-image: inherit;
@@ -18,7 +18,6 @@ a {
 }
 
 .wrap {
-	/*background-color: #999;*/
 	max-width: 1170px;
 	margin: 0px auto;
 	height: 100%;
@@ -54,7 +53,7 @@ a {
 }
 
 .games {
-	display: flex; /* Поменять на flex */
+	display: flex; 
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
@@ -92,10 +91,6 @@ a {
 	transition: .2s;
 }
 
-/*.game:hover {
-	border-radius: 10px;
-}*/
-
 #firstGameBlock {
 	background-image: url("firstImg.jpg");
 	background-size: cover;
@@ -116,7 +111,6 @@ a {
 
 .gameOne {
 	display: flex;
-	/*background-color: #166;*/ /* убрать */
 	font-family: 'Pangolin', cursive;
 	font-size: 28px;
 }
