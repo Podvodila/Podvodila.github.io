@@ -34,6 +34,7 @@ document.querySelector("#nextButton").onclick = function() {
 	massAnswer.push(document.querySelector("#answer").value);
 	//alert(mass);
 	document.querySelector("#answer").value = "";
+	document.querySelector("#answer").focus();
 	document.querySelector("#directQuestion").textContent = questions[countOfQuestions];
 	countOfQuestions++;
 	document.querySelector("#numberOfQuestion").textContent = "Вопрос " + (countOfQuestions+1) + "/"+(questions.length+1);
