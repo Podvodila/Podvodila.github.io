@@ -1,6 +1,10 @@
 /*font-family: 'Press Start 2P', cursive;
 font-family: 'Pangolin', cursive;*/
 
+* {
+	user-select: none;
+}
+
 body {
 	background-color: #ddd;
 }
@@ -101,6 +105,11 @@ a {
 	background-size: cover;
 }
 
+#thirdGameBlock {
+	background-image: url("thirdImg.jpg");
+	background-size: cover;
+}
+
 .startButton {
 	display: flex;
 	justify-content: center;
@@ -117,10 +126,10 @@ a {
 
 .question,
 .result {
- width: 100%;
- display: flex;
- flex-direction: column;
- align-items: center;
+	 width: 100%;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
 }
 
 .result h2 {
@@ -129,8 +138,13 @@ a {
 }
 
 .result p {
-font-size: 22px;
-color: #252525;
+	font-size: 22px;
+	color: #252525;
+	user-select: text;
+}
+
+#resultContent {
+	line-height: 30px;
 }
 
 
