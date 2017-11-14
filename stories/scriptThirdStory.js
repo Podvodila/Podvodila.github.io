@@ -26,9 +26,9 @@ var textForContentOfResult = function() {
 	return text;
 }
 
-document.querySelector("#nextButton").onclick = function() {
+document.querySelector("#nextButton").onclick = document.querySelector("#form").onsubmit = function() {
 	if(document.querySelector("#answer").value == "") {
-		return;
+		return false;
 	}
 	massAnswer.push(document.querySelector("#answer").value);
 	document.querySelector("#answer").value = "";
@@ -39,6 +39,8 @@ document.querySelector("#nextButton").onclick = function() {
 	if(countOfQuestions>questions.length) {
 		endOfTheGame();
 	}
+
+	return false;
 }
 
 function endOfTheGame() {
